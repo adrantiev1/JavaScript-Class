@@ -65,3 +65,27 @@ function calculateTax (price){
 }
 
 console.log('value returned', calculateTax(100));
+
+//Shipping Calculator
+//Weight of product flat rate 2.3 per kg
+//Write a custom function that calculates the
+//shipping rate of a product and formats the price as $00.00
+
+var shippingRate = 2.3;
+
+function shippingCalac(weight){
+  var finalRate = ('$'+(shippingRate * weight).toFixed(2));
+  return finalRate
+}
+
+console.log(shippingCalac(3));
+
+// create a function and send it to the dom ,
+//so it changes the color  of the paragraph
+
+// document.querySelector('p').style.color = 'blue';
+
+function changeColor(item, itemColor){
+  document.querySelector(item).style.color = itemColor;  
+}
+changeColor('nav','orange')
