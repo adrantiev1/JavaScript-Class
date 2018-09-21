@@ -17,3 +17,8 @@ body {
 .red{
   background: tomato;
 }
+button{
+  width: 6rem;
+  height: 2rem;;
+  margin: 5px;
+}
