@@ -1,0 +1,62 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 100%;
+}
+/* To Create a layout x columns
+Parent Properties Are
+Flex container
+width: 50 %
+diplay: flex; flex container
+just-content: space-between;
+flex-wrap: wrap;
+
+Flex items
+- immediate children of the flex container
+- flex-basis(width of a flex item)
+-width: calc( %of layput - space)
+  2 col calc(50% - 1rem)*/
+
+.component{
+  width: 50%;
+
+  background-color: lightgray;
+  margin:5rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  justify-content: space-between;
+  
+
+}
+
+/* childs use css calc */
+.controls, .display
+{
+  width:calc( 50% - 1rem)
+}
+
+
+/* .controls{
+  
+  background-color: skyblue;
+  height: 50vh;
+  
+} */
+
+.display{
+  background-color: salmon;
+  height: 50vh;
+}
+.card{
+  width: 100%;
+  padding: 1.5rem;
+  background-color: rgb(235, 235, 235);
+  border-top:8px solid tomato;
+  box-shadow: 3px 3px 8px 0 rgb(126, 126, 126);
+
+}
+.card img{
+  width: 100%;
+}
