@@ -5,6 +5,7 @@ window.addEventListener('load',function(){
     const productTemplate = document.querySelector("template").content;
     // getting data from the single.js file 
     const productItemData = severalDataObjects;
+    const productsContainer = document.querySelector('.products-container');
     console.log(severalDataObjects); 
 
     // setDisplay()
@@ -23,7 +24,7 @@ window.addEventListener('load',function(){
             productDesc.innerHTML = product.descrption;
 
             console.log(newItem);  
-            document.body.appendChild(newItem);  
+            productsContainer.appendChild(newItem);  
             
         })
     }
