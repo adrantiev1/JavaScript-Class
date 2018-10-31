@@ -22,13 +22,6 @@
             </header>
             <div class="products-container">
 
-                <div class="card product-item">
-                    <h3 class="card-title">Luna</h3>
-                    <div>
-                        <img class="card-thumbnail" src="img/strain-1.jpg" alt="">
-                    </div>
-                    <p class="card-details">Eiusmod ea nulla duis id laboris aliquip in commodo qui dolor.</p>
-                </div>
 
         </div>
 
@@ -36,7 +29,20 @@
 
      
     </main>
- 
+    <!-- Template tag isnt rendred to thr Dom
+    its a fragment  of the Dom use
+querySelector along with dcontent property -->
+    <template>
+        <div class="card product-item">
+            <h3 class="card-title">Luna</h3>
+            <div>
+                <img class="card-thumbnail" src="" alt="">
+            </div>
+            <p class="card-details"></p>
+        </div>
+
+    </template>
+    <script src="js/several.js"></script>
     <script src="js/main.js"></script>
 
 </body>
